@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
 
-# yara.lucas@novotemporh.com.br
-
 def memoize(func):
 
     cache = {}
@@ -55,15 +53,3 @@ def fat(x):
     if x < 2:
         return 1
     return x * fat.func(x - 1)
-
-
-print(fat(50))
-print(fat(50))
-print(fat(50))
-print(fat(50))
-print(fat(50))
-print(fat(50))
-
-
-
-
