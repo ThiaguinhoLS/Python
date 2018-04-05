@@ -30,3 +30,15 @@ from collections import namedtuple
 Immutable = namedtuple("Immutable", ["a", "b"])
 
     
+class Immutable(object):
+    
+    __slots__ = ('a', 'b')
+    
+    def __init__(self, a, b):
+        object.__setattr__(self, 'a', a)
+        object.__setattr__(self, 'b', b)
+        
+     def __setattr__(self, attr, value):
+        raise TypeError('')
+       
+      
