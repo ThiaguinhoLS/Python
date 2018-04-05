@@ -72,4 +72,6 @@ def iter_list(iterable):
 		else:
 			value += i
 
-            
+iter_list(lists)
+
+print(value)
